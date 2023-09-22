@@ -1,0 +1,33 @@
+textarea{
+    resize: none;
+}
+
+#envioBoton {
+    border: 0;
+    background-image: linear-gradient(150deg,
+            #9500ff,
+            #09f,
+            #00DDFF);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#envioBoton span {
+    background-color: #09f;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+#envioBoton:hover-span {
+    background: none;
+}
+
+#envioBoton:active { 
+     transform: scale(0.9);
+ }

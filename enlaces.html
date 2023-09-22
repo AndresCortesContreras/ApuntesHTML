@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnlacesFormularios</title>
+</head>
+
+<body>
+    <h1 id="Home"> Aprendiendo Enlaces y Formularios</id>
+    </h1>
+    <h2>Enlaces</h2>
+    <h3>Enlaces Externos</h3>
+    <p>Los enlaces externos dirigen a otro sitio web que no pertenece al mio</p>
+    <!-- Comando para crear referencias a paginas <a href=""> -->
+    <a href="https://aulasvirtuales.udistrital.edu.co/">
+        <p>Aula virtual</p>
+    </a>
+    <a href="https://aulasvirtuales.udistrital.edu.co/" target="blank">Aula Pestaña</a><br>
+    <a href="https://facebook.com">Facebook</a>
+    <h4>Temario del curso</h4>
+    <ol>
+        <li><a href="holaMundo.HTML" target="blank">Hola mundo</a></li>
+        <li><a href="Internet.html" target="_blank">Internet</a></li>
+        <li id="Pelicula"><a href="Peliculas.html" target="blank">Peliculas</a></li>
+        <li><a href="Listas_Tablas.html" target="_blank">Listas y tablas</a></li>
+    </ol>
+    <h3>Enlaces interno</h3>
+    <a href="#Home">Home</a><br>
+    <!-- llamar ids de otra pagina debemos colocar primero el nombre de la pagina y después el id -->
+    <a href="Listas_Tablas.html#Lista-Ord">Listas ordenadas</a>
+
+    <h2> Formularios</h2>
+    <form>
+        <label for="">Nombre</label>
+        <input type="text">
+        <label for="">Apellido</label>
+        <input type="text"><br><br>
+        <label for="">Cedula</label>
+        <input type="number">
+        <label for"">Contraseña</label>
+        <input type="password"> <br><br>
+        <label for="">Email *</label>
+        <input type="email" placeholder="Ingrese su email" required>
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" placeholder="Ingrese su email" required>
+        <!-- Input para enviar los datos a nuestra base de datos --><br>
+        <label for="">Acepta terminos y condiciones para el registro</label>
+        <input type="checkbox">
+        <input type="submit" value="Registrate!">
+        <br>
+        <select>
+            <option>Opcion 1</option>
+            <option>Opcion 2</option>
+            <option>Opcion 3</option>
+            <option>Opcion 4</option>
+            <option>Opcion 5</option>
+        </select>
+    </form>
+
+    <h3>Inscripciones Atenea</h3>
+    <form>
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Ingrese sus Nombres" required>
+        <label for="">Apellidos</label>
+        <input type="text" placeholder="Ingrese sus Apellidos" required><br><br>
+        <label for="">Tipo de Documento</label>
+        <select>
+            <option value="1">Registro Civil</option>
+            <option value="2">Tarjeta de Identidad</option>
+            <option value="3">Cedula</option>
+        </select>
+        <label for="">N. Documento</label>
+        <input type="number" placeholder="Ingrese su Documento" required>
+        <label for="">Email</label>
+        <input type="email" placeholder="Ingrese su Email" required>
+        <label for="">Telefono</label>
+        <input type="number" placeholder="Ingrese su Telefono"> <br><br>
+        <label for="">¿Porque deberia ser aceptado en el curso?</label><br><br>
+        <textarea cols="30" rows="10"></textarea>
+    </form>
+</body>
+
+</html>

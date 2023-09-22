@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Pacientes</title>
+</head>
+
+<body>
+    <header class="header2">
+        <div class="wrapper">
+            <div class="titulo-principal">
+                <!-- <h1>Centro Medico Bogota</h1> -->
+            </div>
+            <div class="logo"><img src="Imagenes/clinica.png" width="60%"></div>
+            <nav>
+                <ul class="nav">
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a>Medicos</a>
+                <ul>
+                    <li><a href="medicosRegistros.html">Registro medicos</a></li>
+                    <li><a href="listadoMedicos.html">Listado Medicos </a></li>
+                </ul></li>
+                <li><a>Pacientes</a>
+                     <ul>
+                        <li><a href="registroPacientes.html">Registro Pacientes</a></li>
+                        <li><a href="listadoPacientes.html">Listado Pacientes</a></li>
+                        </ul></li>
+
+                <li><a href="http://">Contacto</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contenido">
+        <div class="titulo-principal">
+        <h2>Registro Pacientes</h2></div><br>
+        
+            <form>
+                <label for="">Nombres *</label>
+                <input type="text" placeholder="Nombres" required>
+                <label for="">Apellidos *</label>
+                <input type="text" placeholder="Apellidos" required><br>
+                <label for="">N. Documento *</label>
+                <input type="number" placeholder="Cedula" required><br>
+                <label for="">Edad *</label>
+                <input type="number" required placeholder="Edad">
+                <label for="">Telefono *</label>
+                <input type="number" placeholder="Telefono" required>
+                <label for="">Correo *</label>
+                <input type="email" placeholder="Correo electronico" required><br>
+                <label for="">Especialidad Requerida *</label>
+                <select>
+                    <option value="1">Medicina general.</option>
+                    <option value="2">Cardiología.</option>
+                    <option value="3">Medicina interna.</option>
+                    <option value="4">Dermatología.</option>
+                    <option value="5">Rehabilitación física.</option>
+                    <option value="6">Psicología.</option>
+                    <option value="7">Odontología.</option>
+                    <option value="8">Radiología.</option>
+                </select><br>
+                <label for="">Acepta terminos y condiciones *</label>
+                <input type="checkbox" required><br><br>
+                <p>Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de privacidad y la Política
+                    de cookies.
+                    Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</p>
+                <span><input type="submit" class="botonEnvio"></span>
+            </form>
+        </section>
+<section>
+        <footer></footer></section>
+</body>
+
+</html>
