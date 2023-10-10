@@ -37,108 +37,41 @@
     <section class="contenido">
         <div class="titulo-principal">
         <h1>Registro Medicos</h1></div><br>
-        <form>
+        <form id="registro-medicos">
             <label for="">Nombres *</label>
-            <input type="text" placeholder="Nombres" required>
+            <input type="text" placeholder="Nombres" required id="nombres">
             <label for="">Apellidos *</label>
-            <input type="text" placeholder="Apellidos" required><br>
+            <input type="text" placeholder="Apellidos" required id="apellidos"><br>
             <label for="">N. Documento *</label>
-            <input type="number" placeholder="Cedula" required><br>
+            <input type="number" placeholder="Cedula" required id="documento"><br>
             <label for="">N. Consultorio *</label>
-            <input type="text" placeholder="Consultorio" required>
+            <input type="text" placeholder="Consultorio" required id="consultorio">
             <label for="">Telefono *</label>
-            <input type="number" placeholder="Telefono" required>
+            <input type="number" placeholder="Telefono" required id="telefono">
             <label for="">Correo *</label>
-            <input type="email" placeholder="Correo electronico" required><br>
+            <input type="email" placeholder="Correo electronico" required id="correo"><br>
             <label for="">Especialidad Medico *</label>
-            <select>
-                <option value="1">Medicina general.</option>
-                <option value="2">Cardiología.</option>
-                <option value="3">Medicina interna.</option>
-                <option value="4">Dermatología.</option>
-                <option value="5">Rehabilitación física.</option>
-                <option value="6">Psicología.</option>
-                <option value="7">Odontología.</option>
-                <option value="8">Radiología.</option>
+            <select id="especialidad">
+                <option value="Medicina general">Medicina general.</option>
+                <option value="Cardiología">Cardiología.</option>
+                <option value="Medicina interna">Medicina interna.</option>
+                <option value="Dermatología">Dermatología.</option>
+                <option value="Rehabilitación física">Rehabilitación física.</option>
+                <option value="Psicología">Psicología.</option>
+                <option value="Odontología">Odontología.</option>
+                <option value="Radiología">Radiología.</option>
             </select><br>
             <label for="">Acepta terminos y condiciones *</label>
-            <input type="checkbox" required><br>
+            <input type="checkbox" required id="terminos"><br>
             <p>Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de privacidad y la Política de
                 cookies.
                 Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</p>
-            <span><input type="submit" class="botonEnvio"></span>
-        </form>
-    </section>
-    <section class="contenido">
-        <div class="titulo-principal">
-        <h1>Registro Medicos</h1></div><br>
-        <form>
-            <label for="">Nombres *</label>
-            <input type="text" placeholder="Nombres" required>
-            <label for="">Apellidos *</label>
-            <input type="text" placeholder="Apellidos" required><br>
-            <label for="">N. Documento *</label>
-            <input type="number" placeholder="Cedula" required><br>
-            <label for="">N. Consultorio *</label>
-            <input type="text" placeholder="Consultorio" required>
-            <label for="">Telefono *</label>
-            <input type="number" placeholder="Telefono" required>
-            <label for="">Correo *</label>
-            <input type="email" placeholder="Correo electronico" required><br>
-            <label for="">Especialidad Medico *</label>
-            <select>
-                <option value="1">Medicina general.</option>
-                <option value="2">Cardiología.</option>
-                <option value="3">Medicina interna.</option>
-                <option value="4">Dermatología.</option>
-                <option value="5">Rehabilitación física.</option>
-                <option value="6">Psicología.</option>
-                <option value="7">Odontología.</option>
-                <option value="8">Radiología.</option>
-            </select><br>
-            <label for="">Acepta terminos y condiciones *</label>
-            <input type="checkbox" required><br>
-            <p>Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de privacidad y la Política de
-                cookies.
-                Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</p>
-            <span><input type="submit" class="botonEnvio"></span>
-        </form>
-    </section>
-    <section class="contenido">
-        <div class="titulo-principal">
-        <h1>Registro Medicos</h1></div><br>
-        <form>
-            <label for="">Nombres *</label>
-            <input type="text" placeholder="Nombres" required>
-            <label for="">Apellidos *</label>
-            <input type="text" placeholder="Apellidos" required><br>
-            <label for="">N. Documento *</label>
-            <input type="number" placeholder="Cedula" required><br>
-            <label for="">N. Consultorio *</label>
-            <input type="text" placeholder="Consultorio" required>
-            <label for="">Telefono *</label>
-            <input type="number" placeholder="Telefono" required>
-            <label for="">Correo *</label>
-            <input type="email" placeholder="Correo electronico" required><br>
-            <label for="">Especialidad Medico *</label>
-            <select>
-                <option value="1">Medicina general.</option>
-                <option value="2">Cardiología.</option>
-                <option value="3">Medicina interna.</option>
-                <option value="4">Dermatología.</option>
-                <option value="5">Rehabilitación física.</option>
-                <option value="6">Psicología.</option>
-                <option value="7">Odontología.</option>
-                <option value="8">Radiología.</option>
-            </select><br>
-            <label for="">Acepta terminos y condiciones *</label>
-            <input type="checkbox" required><br>
-            <p>Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de privacidad y la Política de
-                cookies.
-                Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</p>
-            <span><input type="submit" class="botonEnvio"></span>
-        </form>
-    </section>
+                <span><input type="submit" class="botonEnvio" id="boton"></span>
+                <span><a href="index.html"><input type="button" class="botonVolver" value="Volver"></a></span>       
+            </form>
+                    
+        </section>
+        <script src="app.js"></script>
     <footer>
         <h2>Redes Sociales</h2>
         <ul>
@@ -146,7 +79,9 @@
             <li><a href="https://www.twitter.com/tu_perfil" target="_blank">Twitter</a></li>
             <li><a href="https://www.github.com/tu_perfil" target="_blank">GitHub</a></li>
         </ul>
+        <p>Realizado por Andres Cortes estudiante de Back end</p>
     </footer>
+   
 </body>
 
 </html>

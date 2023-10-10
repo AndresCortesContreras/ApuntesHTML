@@ -39,7 +39,7 @@
         <div class="titulo-principal">
         <h2>Registro Pacientes</h2></div><br>
         
-            <form>
+            <form id="registroPacientes">
                 <label for="">Nombres *</label>
                 <input type="text" placeholder="Nombres" required>
                 <label for="">Apellidos *</label>
@@ -53,7 +53,7 @@
                 <label for="">Correo *</label>
                 <input type="email" placeholder="Correo electronico" required><br>
                 <label for="">Especialidad Requerida *</label>
-                <select>
+                <select name="especialidad_pacientes" id="especialidad_pacientes">
                     <option value="1">Medicina general.</option>
                     <option value="2">Cardiología.</option>
                     <option value="3">Medicina interna.</option>
@@ -68,11 +68,20 @@
                 <p>Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de privacidad y la Política
                     de cookies.
                     Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</p>
-                <span><input type="submit" class="botonEnvio"></span>
+                    <span><input type="submit" class="botonEnvio"></span>
+                    <span><a href="index.html"><input type="button" class="botonVolver" value="Volver"></a></span>
             </form>
         </section>
-<section>
-        <footer></footer></section>
+
+    <footer>
+        <h2>Redes Sociales</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/tu_perfil" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.twitter.com/tu_perfil" target="_blank">Twitter</a></li>
+            <li><a href="https://www.github.com/tu_perfil" target="_blank">GitHub</a></li>
+        </ul>
+        <p>Realizado por Andres Cortes estudiante de Back end</p>
+    </footer>
 </body>
 
 </html>
